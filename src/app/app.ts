@@ -10,3 +10,11 @@ import { RouterOutlet } from "@angular/router";
 export class App {
 	protected readonly title = signal("discover-angular");
 }
+
+export interface TBox {
+  id: number;
+  title: string;
+  icon: string;
+  color: string;
+  alt: string;
+}
