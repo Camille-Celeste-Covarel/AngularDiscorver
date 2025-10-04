@@ -1,9 +1,10 @@
-<html>
-<body>
-<div class="bg-red-500 round-3x1 w-250px h-250px">
-  <h1>Angular Discover</h1></div>
-
-</body>
-</html>
+<div>
+  <h1 class="text-2xl text-white font-bold capitalize p-8">Angular Discover</h1>
+  <main class="flex flex-wrap flex-row gap-4">
+  @for (item of BoxD; track item.id) {
+  <app-box [box]="item"></app-box>
+  }
+  </main>
+</div>
 
 <router-outlet />

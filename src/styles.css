@@ -1,3 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "./app/normalize.css";
 @import "tailwindcss";
+
+body {
+  @apply flex flex-col min-h-screen bg-[#333333] m-0;
+}

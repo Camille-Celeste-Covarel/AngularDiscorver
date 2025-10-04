@@ -1,5 +1,4 @@
-<div class="bg-{{box.color}} round-3x1 w-250px h-250px">
-  <h2>{{box.title}}</h2>
-  <img ngSrc="{{box.icon}}" alt="{{box.alt}}" fill>
+<div [style.backgroundColor]="box.color" class="w-[250px] h-[250px] flex flex-col items-center m-5 justify-center gap-y-4">
+  <h2 class="text-2xl font-bold capitalize text-white">{{box.title}}</h2>
+  <img [ngSrc]="box.icon" [alt]="box.alt" width="75" height="75">
 </div>
-<app-box></app-box>

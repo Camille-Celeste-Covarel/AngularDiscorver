@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import type { TBox } from '../app';
-import {NgOptimizedImage} from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-box',
@@ -11,13 +11,6 @@ import {NgOptimizedImage} from '@angular/common';
   templateUrl: './box.html',
   styleUrl: './box.css'
 })
-
-export class BoxComponent {
-  box: TBox = {
-    id: 1,
-    title: 'docker',
-    icon: 'docker.png',
-    color: 'orange',
-    alt: 'docker icon'
-  };
+export class Box {
+  @Input() box!: TBox;
 }
